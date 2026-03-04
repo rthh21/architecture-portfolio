@@ -13,17 +13,16 @@ nav {
     align-items: center;  
     justify-content:space-around;  
     
-    width: 30%;
+    width: 35%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 15px 0;
     background-color: rgba(255, 255, 255, 0.196);
-    border: 5px solid white;  
     border-radius: 150px; 
 }
    
-li {
-    color: rgb(0, 0, 0);  
+a {
+    color: rgb(244, 244, 244);  
     list-style-type: none;
     margin-left: 50px; 
     margin-right: 50px;
