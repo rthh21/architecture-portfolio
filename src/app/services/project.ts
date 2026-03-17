@@ -7,7 +7,11 @@ import { Project } from '../models/project';
 
 export class ProjectService {
   private projects: Project[] = [
-    { id: 1, name: 'My Project' }
+    { id: 1, name: 'My Project' },
+    { id: 2, name: 'My Project 2' },
+    { id: 3, name: 'My Project 3' },
+    { id: 4, name: 'My Project 4' },
+    { id: 5, name: 'My Project 5' }
   ];
 
   constructor() {}

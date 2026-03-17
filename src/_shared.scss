@@ -10,7 +10,15 @@ $btn-radius:50px;
 $btn-txt-color: rgb(244, 244, 244);
 $btn-txt-hover: rgb(29, 68, 128);   
 
+%glass-template {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+}
+
 %btn-base {
+    @extend %glass-template; 
     height: $btn-height;
     border-radius: $btn-radius;    
     display: flex;
@@ -18,12 +26,6 @@ $btn-txt-hover: rgb(29, 68, 128);
     justify-content: center;
     align-items: center;
     align-self: center;
-    
-    // Glassmorphism
-    background: rgba(255, 255, 255, 0.15);
-    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.6px);
-    -webkit-backdrop-filter: blur(5.6px);
 }
 
 %btn-text{

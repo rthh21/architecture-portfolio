@@ -1,11 +1,9 @@
 <div class="project-grid">
   @for (project of myProjects; track project.id) {
-    <div class="project-class">
-      <h3>{{ project.name }}</h3>
+    <div class="project-card">
+      <h3>{{ project.name }}</h3>   
     </div>
   } @empty {
-    <p>No projects found!</p>
+    <p class = "no-projects-card">No projects found!</p>
   }
-<button (click)="createNew()">Add Second Project</button>
-  <div>test</div>
 </div>
