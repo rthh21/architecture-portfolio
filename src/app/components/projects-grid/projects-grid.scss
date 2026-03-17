@@ -1,11 +1,11 @@
 @use '../../../shared' as *; 
 
-.project-grid{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.project-grid {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .project-card{
@@ -15,14 +15,39 @@
     align-items: center;
     justify-content: center;
     
-    width: clamp(150px, 20vw, 300px);
-    height: clamp(200px, 40vh, 400px);
-    padding: 50px;
-    margin: 50px;
     
-    // background-color: rgb(100, 190, 255);
-    border-radius: 20px;
+    height: clamp(200px, 60vh, 1500px);
+    padding: 50px;
+    
+    background-color: rgb(29, 47, 126);
+    border-radius: 30px;
 }
+
+/* 1st item (formerly .div1) */
+.project-card:nth-child(1) {
+    grid-column: span 3 / span 3;
+    height: clamp(200px, 60vh, 1500px);
+    
+}
+
+/* 2nd item (formerly .div2) */
+.project-card:nth-child(2) {
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+/* 3rd item (formerly .div4) */
+.project-card:nth-child(3) {
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+/* 4th item (formerly .div5) */
+.project-card:nth-child(4) {
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+
 h3 {
     margin-bottom: 7%;
 }

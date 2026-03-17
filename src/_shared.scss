@@ -2,6 +2,9 @@
 // base button placeholder; extend in component styles instead of
 // using a generic utility class that leaks globally
 // Global declarations
+$background-global: #003683;
+$text-color-global: rgb(244, 244, 244);  
+
 $btn-color: rgba(255, 255, 255, 0.402);
 $btn-height: 60px;
 $btn-radius:50px;
@@ -14,7 +17,7 @@ $btn-txt-hover: rgb(29, 68, 128);
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.6px);
-    -webkit-backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px); 
 }
 
 %btn-base {
@@ -35,4 +38,4 @@ $btn-txt-hover: rgb(29, 68, 128);
     list-style-type: none;
     text-decoration: none;
     transition: all 0.2s ease;
-}
+} 
