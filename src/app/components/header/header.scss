@@ -18,7 +18,7 @@
 
 .home-link {
     @extend %btn-base;
-    width: clamp(70px, 7vw, 100px); 
+    width: clamp(70px, 4vw, 100px); 
     aspect-ratio: 1; 
     cursor: pointer;
     
