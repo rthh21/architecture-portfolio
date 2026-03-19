@@ -11,6 +11,6 @@ export class Hero {
   isScrollingDown = false;
   @HostListener ('window:scroll', []) onWindowScroll() {
     const currentScroll = window.scrollY;
-    this.isScrollingDown = currentScroll > 800;
+    this.isScrollingDown = currentScroll > 900;
   }
 }
