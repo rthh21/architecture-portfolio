@@ -1,11 +1,13 @@
+@use '../../../shared' as *; 
+
 .footer-block {
     display: flex;
     align-items: center;
     justify-content: center ;
 
-    color: gainsboro !important; 
-    background-color: rgb(14, 16, 30);  
-    height: clamp(100px, 20vh, 300px);
+    color: $secondary-text-color-global; 
+    background-color: rgb(18, 18, 18);  
+    height: clamp(100px, 17vh, 300px);
     width: 100%
 }
 p {

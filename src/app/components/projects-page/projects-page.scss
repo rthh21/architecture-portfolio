@@ -1,0 +1,30 @@
+@use '../../../shared' as *; 
+
+*  {
+    color: $text-color-global;  
+    // background-color: $background-glo    bal;
+}
+
+.title-text {
+    margin: clamp(25px, 2.5vh, 40px);
+    font-weight: 200;
+    font-size: 90px;
+}
+
+.projects-wrapper{
+    padding-top: 130px;
+}
+
+::ng-deep .project-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+
+::ng-deep  .projects-wrapper .project-grid .project-card:nth-child(1),
+::ng-deep  .projects-wrapper .project-grid .project-card:nth-child(2),
+::ng-deep  .projects-wrapper .project-grid .project-card:nth-child(3),
+::ng-deep  .projects-wrapper .project-grid .project-card:nth-child(4) {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    grid-row-start: auto !important;
+    grid-column-start: auto !important;
+}
